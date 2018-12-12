@@ -21,10 +21,10 @@ for (let i = 0; i < 2; i++) {
 		console.log("done");
 		appData.expenses[a] = b;
 	} else {
+        console.log ("bad result");
 		i--; // сделать еще шаг цикла
 	} 
 }
-console.log(appData.expenses.aaa);
 
 // 2 тип цикла
 // let i = 0;
@@ -61,7 +61,7 @@ console.log(appData.expenses.aaa);
 
 appData.moneyPerDay = appData.budget / 30;
 
-alert ("Ежедневный бюджет: " + appData.moneyPerDay);
+alert ("Ежедневный бюджет: " + appData.moneyPerDay + "руб.");
 
 if (appData.moneyPerDay < 100) {
 	console.log("Минимальный уровень достатка");
